@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'htmlbook'
-  s.version = '0.1.0'
+  s.version = '0.1.1'
   s.summary = 'Splits HTML content into pages suitable for printing.'
   s.authors = ['James Robertson']
   s.files = Dir['lib/htmlbook.rb']

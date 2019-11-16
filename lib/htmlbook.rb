@@ -63,9 +63,10 @@ class HtmlBook
       pages.each do |page, pg_no|
         
         puts 'page: ' + page.inspect if @debug
-
+        
+        
         xml.div({class: 'page '})  do
-          xml.article page.children.join
+          xml.article (page ? page.children.join : '&nbsp;')
           xml.footer do
             xml.p({class: 'n'+ (pg_no.odd? ? 'odd' : 'even')}, 
                   'pg ' + pg_no.to_s)
