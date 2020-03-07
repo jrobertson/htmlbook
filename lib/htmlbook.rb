@@ -47,6 +47,10 @@ class HtmlBook
     
   end
   
+  def to_css()
+    css()
+  end
+  
   protected
   
   def collate(pages)
